@@ -7,8 +7,9 @@
 
 
 <ol>
-<%= for transaction in transactions %>
+<% for transaction in transactions %>
 <li> <%= amount %> from <%= from_user_id %> to <%= to_user_id %> </li>
+<% end %>
 </ol>
 
 <!-- Step 2: Calculate and display the balances -->
