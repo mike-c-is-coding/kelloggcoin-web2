@@ -1,6 +1,15 @@
 <h1>KelloggCoin Ledger</h1>
+<!--`Transaction` exists (you can test this condition with something like `if from_user`),
+ then display the details of the transaction (e.g. *1557 KC from Ben to Brian*)
+- If the transaction is the "Initial Coin Offering", then display it as such
+ (e.g. *Initial coin offering: 10000 to Ben*) -->
+<!--Step 1: List all transactions, starting with the ICO -->
 
-<!-- Step 1: List all transactions, starting with the ICO -->
+
+<ol>
+<%= for transaction in transactions %>
+<li> <%= amount %> from <%= from_user_id %> to <%= to_user_id %> </li>
+</ol>
 
 <!-- Step 2: Calculate and display the balances -->
 
